@@ -66,9 +66,43 @@ img {
   padding: calc(var(--separation) * 3) 0;
   color: var(--white);
 }
-@media (min-width: 768px){  
-    .content-header {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
+@media (min-width: 768px) {
+  .content-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.text-header {
+  text-align: center;
+}
+@media (min-width: 769px) {
+  .text-header {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.text-header p {
+  margin: 0;
+}
+
+.tagLine-product {
+  font-size: 3rem;
+  font-weight: 900;
+}
+.name-product {
+  font-size: 6rem;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .name-product {
+    font-size: 10rem;
+    line-height: 1;
+  }
+}
+.price-product span {
+  font-size: 6rem;
+  font-weight: 900;
 }
