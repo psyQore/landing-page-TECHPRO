@@ -54,8 +54,21 @@ h3 {
 img {
   max-width: 100%;
   display: block;
+  height: auto;
 }
 /* Utilidades */
 .text-center {
   text-align: center;
+}
+/* Header */
+.header {
+  background-color: var(--black);
+  padding: calc(var(--separation) * 3) 0;
+  color: var(--white);
+}
+@media (min-width: 768px){  
+    .content-header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
