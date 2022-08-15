@@ -1,5 +1,12 @@
 /* Custom Propertys */
 :root {
+  --primary: #1073ba;
+  --secondary: #00da55;
+  --gray: #3b3b3b;
+  --white: #ffffff;
+  --black: #1f1e1e;
+  --grayLight: #e1e1e1;
+
   --fontMain: "Roboto", sans-serif;
   --fontSecondary: "Lato", sans-serif;
 }
