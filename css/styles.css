@@ -211,3 +211,53 @@ img {
 .text-about-tech h2 {
   font-size: 4rem;
 }
+
+/* Modelos TechPRO */
+.models {
+  padding: var(--separation) 0;
+}
+.header-models {
+  font-size: 6rem;
+  margin-bottom: 5rem;
+}
+.list-models {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.model {
+  background-color: var(--grayLight);
+  margin-bottom: 2rem;
+  padding-left: 4rem;
+  color: var(--primary);
+  border-radius: 2rem;
+  min-height: 20rem;
+  background-repeat: no-repeat;
+  background-position: 90%, center;
+  background-size: 15rem;
+
+}
+.model h3 {
+  font-size: 2.4rem;
+}
+.model .price {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 0;
+}
+.model:first-of-type {
+  margin-bottom: 0;
+}
+.model-x {
+  background-image: url(../img/modelo-x.svg);
+}
+.model-y {
+  background-image: url(../img/modelo-y.svg);
+}
+.model-z {
+  background-image: url(../img//modelo-z.svg);
+  background-color: var(--primary);
+  color: var(--white);
+}
+.model-z .price {
+  font-size: 6rem;
+}
