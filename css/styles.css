@@ -246,7 +246,7 @@ img {
   flex-direction: column;
   justify-content: center;
   transition-property: transform backgroud-size;
-  transition-duration: .4s;
+  transition-duration: 0.4s;
 }
 .model:hover {
   transform: scale(1.1);
@@ -291,4 +291,67 @@ img {
 }
 .model-z .price {
   font-size: 6rem;
+}
+/* Nesletter */
+.newsletter {
+  background-image: linear-gradient(to bottom, transparent 50%, var(--white) 0%),
+    url(../img/newsletter.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100%, 70rem;
+}
+@media (min-width: 768px) {
+  .newsletter {
+    background-image: linear-gradient(
+        to right,
+        transparent 50%,
+        var(--white) 0%
+      ),
+      url(../img/newsletter.jpg);
+    background-position: center, -10rem 0rem;
+    background-size: 100%, 100rem;
+    padding: 5rem 0;
+  }
+}
+@media (min-width: 2200px) {
+  .newsletter {
+    background-size: 100%, 20rem;
+    background-position: center, 0% -30rem;
+  }
+}
+.content-newsletter {
+  display: grid;
+  grid-template-rows: repeat(2, 30rem);
+}
+@media (min-width: 768px) {
+  .content-newsletter {
+    grid-template-rows: unset;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.text-newsletter {
+  grid-row: 2 / 3;
+}
+@media (min-width: 768px) {
+  .text-newsletter {
+    grid-row: unset;
+    grid-column: 2 / 3;
+    padding-left: 2rem;
+  }
+}
+
+.form input[type="text"] {
+  width: 100%;
+  padding: 1rem;
+}
+.form input[type="submit"] {
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--primary);
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 900;
+  border: none;
+  cursor: pointer;
 }
