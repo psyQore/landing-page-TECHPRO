@@ -245,8 +245,14 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition-property: transform backgroud-size;
+  transition-duration: .4s;
 }
-@media (min-width: 992px){  
+.model:hover {
+  transform: scale(1.1);
+  background-size: 30rem;
+}
+@media (min-width: 992px) {
   .model {
     margin-bottom: 0;
   }
